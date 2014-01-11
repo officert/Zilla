@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZillaIoc", "ZillaIoc\ZillaI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZillaMvc", "ZillaMvc\ZillaMvc.csproj", "{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{38E551E2-160C-4086-B1A0-1E63B6915061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZillaIoc.Unit", "ZillaIoc.Unit\ZillaIoc.Unit.csproj", "{820900BA-2E7B-4903-8DC0-9A1B2A887381}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,8 +23,16 @@ Global
 		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820900BA-2E7B-4903-8DC0-9A1B2A887381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820900BA-2E7B-4903-8DC0-9A1B2A887381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820900BA-2E7B-4903-8DC0-9A1B2A887381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820900BA-2E7B-4903-8DC0-9A1B2A887381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5} = {38E551E2-160C-4086-B1A0-1E63B6915061}
+		{820900BA-2E7B-4903-8DC0-9A1B2A887381} = {38E551E2-160C-4086-B1A0-1E63B6915061}
 	EndGlobalSection
 EndGlobal
