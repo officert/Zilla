@@ -12,12 +12,12 @@ namespace ZillaIoc
 {
     public class Container : IContainer
     {
-        private readonly ICollection<Binding> _bindings;
+        internal readonly ICollection<Binding> Bindings;
         private readonly Dictionary<ObjectScope, IObjectCache> _objectCaches;
 
         public Container()
         {
-            _bindings = new Collection<Binding>();
+            Bindings = new Collection<Binding>();
 
             _objectCaches = new Dictionary<ObjectScope, IObjectCache>
             {
@@ -72,13 +72,13 @@ namespace ZillaIoc
 
                 //Validate bindings before adding them to our internal collection
 
-                _bindings.Add(binding);
+                Bindings.Add(binding);
             }
         }
 
         private void CreateFactoriesForBindings()
         {
-            foreach (var binding in _bindings)
+            foreach (var binding in Bindings)
             {
                 var registerBindingMethod = typeof(Container).GetMethod("RegisterBinding", BindingFlags.NonPublic | BindingFlags.Instance);
                 var genericMethodInfo = registerBindingMethod.MakeGenericMethod(binding.Service);
@@ -140,7 +140,7 @@ namespace ZillaIoc
 
         private Binding FindBinding(Type service)
         {
-            return _bindings.FirstOrDefault(x => x.Service == service);
+            return Bindings.FirstOrDefault(x => x.Service == service);
         }
 
         //private Binding CreateNewBinding<TService>()
