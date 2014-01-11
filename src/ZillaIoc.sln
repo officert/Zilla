@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZillaIoc", "ZillaIoc\ZillaIoc.csproj", "{3EB2D78F-467F-409A-A364-EF9E4274CC8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZillaMvc", "ZillaMvc\ZillaMvc.csproj", "{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EB2D78F-467F-409A-A364-EF9E4274CC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB2D78F-467F-409A-A364-EF9E4274CC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB2D78F-467F-409A-A364-EF9E4274CC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB2D78F-467F-409A-A364-EF9E4274CC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E99B67E-FE56-4AFA-B55D-3FE3AE61DEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
