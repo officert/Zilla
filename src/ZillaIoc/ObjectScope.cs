@@ -13,10 +13,6 @@
         /// <summary>
         /// The container will create a single instance per HTTP request and return that instance for the duration of the HTTP request.
         /// </summary>
-        HttpRequest,
-        /// <summary>
-        /// The container will create a single instance per thread and return that instance for the duration of the thread.
-        /// </summary>
-        ThreadScope
+        HttpRequest
     }
 }

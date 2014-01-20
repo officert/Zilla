@@ -2,7 +2,8 @@
 {
     public class DependencyMapOptions
     {
-        private Binding _binding;
+        private readonly Binding _binding;
+
         public DependencyMapOptions(Binding binding)
         {
             _binding = binding;
@@ -36,14 +37,6 @@
         public void InHttpRequestScope()
         {
             _binding.ObjectScope = ObjectScope.HttpRequest;
-        }
-
-        /// <summary>
-        /// Specifies that the object should be cached per thread. The container will return the same instance for the duration of the thread.
-        /// </summary>
-        public void InThreadScope()
-        {
-            _binding.ObjectScope = ObjectScope.ThreadScope;
         }
     }
 }

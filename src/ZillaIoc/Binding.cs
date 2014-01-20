@@ -12,14 +12,4 @@ namespace ZillaIoc
         public IObjectCache ObjectCache { get; set; }
         public string Key = Guid.NewGuid().ToString();
     }
-
-    public class Binding<TService> : Binding
-    {
-        internal Func<Container, TService> Factory { get; set; }
-
-        public Binding()
-        {
-            Service = typeof(TService);
-        }
-    }
 }
